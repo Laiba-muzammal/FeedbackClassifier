@@ -1,17 +1,56 @@
-# Product Review Sentiment Analysis
-<pre>
-This Python program performs sentiment analysis on product review comments. It classifies comments as Positive, Negative, or Neutral based on keywords. Here's an overview:
-<h3>Data:</h3> The program processes a list of product review comments.
-<h3>Sentiment Classification:</h3> It checks each comment for specific keywords:
-<h3>Positive Keywords:</h3> e.g., 'amazing', 'love', 'good'
-<h3>Negative Keywords:</h3> e.g., 'disappoint', 'worst', 'bad'
-<h3>Visualization:</h3> A bar chart shows the distribution of sentiments (Positive, Negative, Neutral).
+# 🧠 FeedbackClassifier
+A simple Python project to analyze user feedback and classify it into Positive, Negative, or Neutral sentiments based on keyword matching.
 
-<h3>Output:</h3> It displays each comment with its assigned sentiment label.
+---
 
-<h3>Dependencies:</h3>
-pandas
-matplotlib
+# 📌 Features
+Classifies user comments using a basic keyword-based logic
 
-<h3>Usage:</h3> Run the script, and it will print the sentiment for each review and display a bar chart summarizing the sentiments.
-</pre>
+Visualizes sentiment distribution using matplotlib
+
+Clean and readable code suitable for learning or small-scale feedback systems
+
+---
+
+# 🗂️ Project Structure
+```
+FeedbackClassifier/
+├── classifier.py       # Contains sentiment classification logic
+├── visualizer.py       # Handles bar chart visualization
+├── app.py              # Main script that integrates everything
+└── README.md           # Project documentation
+```
+
+---
+
+# 🚀 How It Works
+The program takes a list of user comments.
+
+Each comment is analyzed for presence of positive or negative keywords.
+
+A sentiment tag is assigned to each comment.
+
+A bar chart is generated showing the sentiment distribution.
+
+---
+
+# 📈 Sample Output
+Positive keywords: "amazing", "love", "good", "happy", "excellent", "best", ..."
+
+Negative keywords: "bad", "worst", "poor", "waste", "disappoint", ..."
+
+> The tool prints each comment with its sentiment and plots the sentiment counts.
+
+---
+
+# ▶️ Run the App
+#### Make sure you have matplotlib and pandas installed:
+
+```
+pip install matplotlib pandas
+```
+
+#### Run the project:
+```
+python app.py
+```
